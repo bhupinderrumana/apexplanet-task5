@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Student Portal</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="todo.html">To-Do</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>My To-Do List</h1>
+      <p>Stay productive and organized!</p>
+    </section>
+
+    <section class="todo-section">
+      <div class="todo-container">
+        <input type="text" id="taskInput" placeholder="Enter a new task..." />
+        <button id="addTaskBtn">Add Task</button>
+        <ul id="taskList"></ul>
+
+        <!-- ✅ View Stored Tasks -->
+        <div class="view-storage">
+          <button id="viewDataBtn">📂 View Stored Tasks</button>
+          <pre id="storageOutput"></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bhupinder Singh (BSR). All rights reserved.</p>
+  </footer>
+
+  <!-- Load JS after HTML is parsed -->
+  <script src="todo.js" defer></script>
+</body>
+</html>

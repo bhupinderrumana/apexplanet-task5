@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Resources</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Student Portal</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="todo.html">To-Do</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Study Resources</h1>
+      <p>Explore curated educational content</p>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+      <div class="filters">
+        <select id="subjectFilter">
+          <option value="all">All Subjects</option>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="Programming">Programming</option>
+        </select>
+
+        <select id="sortOption">
+          <option value="title">Sort by Title</option>
+          <option value="difficulty">Sort by Difficulty</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Resource Cards Section -->
+    <section class="resource-list" id="resourceList">
+      <!-- Resources will load dynamically here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bhupinder Singh (BSR). All rights reserved.</p>
+  </footer>
+
+  <script src="resources.js" defer></script>
+</body>
+</html>
